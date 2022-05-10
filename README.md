@@ -30,8 +30,8 @@ Roughly, The component, structure and the team task distribution of the map will
         - Or you can set up user upload
 - Classification?
     - Example of classification from data using different color lines
-## djdj
-  
+
+## Back end
     - Dynamic HTML framework (Flask)
     - Ajax/Data syncing (async Python requests, ODK Central client)
     - Data science/cleaning (Pandas or maybe just list comprehensions)
