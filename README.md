@@ -45,6 +45,12 @@ Roughly, The component, structure and the team task distribution of the map will
         - Linux servers (digital Ocean etc)
         - Serverless (DO apps, Google App Engine, AWS, Heroku, etc)
 
+# Next Steps
+- Get json importing working; parse geojson insteady of passing it through java sripts. If we are going to use direct java sripts files we will be open to viruses
+- Write instructions for user to add map data
+- Get async working, load webmap, make spine, start a spiner to allow user still seeing the map while data is loading 
+- Set up let's Encrypt
+
 # Resources
 
 [A blog from our old friend Chris Arderne](https://rdrn.me/leaflet-maps-google-sheets/#pulling-data-from-google-sheets) on provisioning Leaflet maps from Google Sheets; very cool.
