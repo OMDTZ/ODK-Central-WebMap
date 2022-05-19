@@ -28,8 +28,6 @@ if ! type "certbot"; then
 else echo Certbot seems to be already installed
 fi
 
-echo Procuring a certificate for the site from LetsEncrypt using Certbot
-sudo certbot --nginx -n --agree-tos --redirect -m $email -d $domain_name -d www.$domain_name
 
 
   # Move webmap files in nginx folder
@@ -42,4 +40,5 @@ sudo certbot --nginx -n --agree-tos --redirect -m $email -d $domain_name -d www.
   sudo cp -r app/Leaflet.markercluster-1.4.1 /var/www/html/
   sudo cp -r app/css /var/www/html/
   
-  
+  echo Procuring a certificate for the site from LetsEncrypt using Certbot
+sudo certbot --nginx -n --agree-tos --redirect -m $email -d $domain_name -d www.$domain_name
