@@ -17,9 +17,18 @@ const geojsonMarkerOptions = {
   fillOpacity: 0.8,
 };
 
+async function dataset_promise(){
+    dataset=JSON.parse(table);
+}
+//promise then
+dataset_promise.then(function(dataset){
+
+    var datalayer = L.geoJSON().addTo(map);
+    datalayer.addData(datalayer);
+
  // loading geojson
-const dataset = L.geoJSON(table, {
-  onEachFeature: function (feature, layer) {
+
+function onEachFeature: function (feature, layer) {
 
          const popupContent =
         '<h4 class = "text-primary">Sample Point</h4>' +
@@ -43,7 +52,7 @@ const dataset = L.geoJSON(table, {
         
         layer.bindPopup(popupContent);
 
-  },
+  };
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng, geojsonMarkerOptions);
   },
@@ -52,3 +61,5 @@ const dataset = L.geoJSON(table, {
 const markers = L.markerClusterGroup().addLayer(dataset);
 // marker clustering
 map.addLayer(markers);
+)};
+*/
